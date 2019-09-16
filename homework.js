@@ -156,3 +156,30 @@ multigreeting(alex,es)
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+
+function gcd(a,b) {
+    d=0
+    while (isEven(a) && isEven(b)) {
+        a = a/2
+        b = b/2
+        d = d + 1
+    }
+    while (a != b) {
+        if (isEven(a)) {
+           a = a/2
+        }
+        else if (isEven(b)) {
+            b = b/2
+        }
+        else if (a > b) {
+            a = (a-b)/2
+        }
+        else {
+            b = (b-a)/2
+        }
+    }
+    const g = a
+    return (g * 2 ** d)
+}
+
+gcd(2,2)
