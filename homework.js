@@ -53,7 +53,7 @@ isEven(12)
 // temperature in Celsius.
 
 function fahrenheitToCelsius(num) {
-    return ((num-32)*(5/9))
+    return (num-32)*(5/9)
 }
 
 fahrenheitToCelsius(80)
@@ -76,7 +76,7 @@ celsiusToFahrenheit(29)
 // 1 degree Kelvin equals 1 degree Celsius.
 
 function fahrenheitToKelvin(num) {
-    return (fahrenheitToCelsius(num) + 273.15)
+    return fahrenheitToCelsius(num) + 273.15
 }
 
 fahrenheitToKelvin(45)
@@ -113,16 +113,16 @@ lesser(45,30)
 
 function multigreeting(name,language) {
     if (language === "en") {
-        return ("Hello, " + name + "!")
+        return "Hello, " + name + "!"
     }
     else if (language === "es") {
-        return ("¡Hola, " + name + "!")
+        return "¡Hola, " + name + "!"
     }
     else if (language === "fr") {
-        return ("Bonjour, " + name + "!")
+        return "Bonjour, " + name + "!"
     }
     else if (language === "eo") {
-        return ("Saluton, " + name + "!")
+        return "Saluton, " + name + "!"
     }
     else {
     }
@@ -158,7 +158,7 @@ multigreeting(alex,es)
 // divisor using the instructions above.
 
 function gcd(a,b) {
-    d=0
+     d=0
     while (isEven(a) && isEven(b)) {
         a = a/2
         b = b/2
@@ -179,7 +179,7 @@ function gcd(a,b) {
         }
     }
     const g = a
-    return (g * 2 ** d)
+    return g * 2 ** d
 }
 
 gcd(2,2)
