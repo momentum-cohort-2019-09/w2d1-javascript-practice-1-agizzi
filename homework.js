@@ -164,7 +164,7 @@ function gcd(a,b) {
         b = b / 2
         d = d + 1
     }
-    while (a != b) {
+    while (a !== b) {
         if (isEven(a)) {
            a = a / 2
         }
